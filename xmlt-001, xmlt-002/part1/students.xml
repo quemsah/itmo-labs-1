@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE table [
+  <!ELEMENT table (student+)>
+  <!ELEMENT student (otmetka+)>
+  <!ATTLIST student name CDATA #REQUIRED>
+  <!ELEMENT otmetka (#PCDATA)>
+  <!ATTLIST otmetka disciplina CDATA #REQUIRED>
+]>
+<table>
+  <student name="Иванов">
+    <otmetka disciplina="Мультимедиа">3</otmetka>
+  </student>
+  <student name="Петров">
+    <otmetka disciplina="Мультимедиа">3</otmetka>
+    <otmetka disciplina="Веб-дизайн">4</otmetka>
+    <otmetka disciplina="Графика">5</otmetka>
+    <otmetka disciplina="Логика">5</otmetka>
+  </student>
+  <student name="Сидоренко">
+    <otmetka disciplina="Мультимедиа">3</otmetka>
+    <otmetka disciplina="Веб-дизайн">4</otmetka>
+    <otmetka disciplina="Графика">5</otmetka>
+    <otmetka disciplina="Логика">4</otmetka>
+  </student>
+</table>

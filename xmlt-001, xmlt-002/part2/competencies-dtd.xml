@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Skills [
+  <!ELEMENT Skills (Frontend,Design,Backend,Tools)>
+    <!--Frontend-->
+  <!ELEMENT Frontend (competency,CSS,JavaScript)>
+  <!ELEMENT CSS (competency+)>
+  <!ATTLIST CSS value CDATA #REQUIRED>
+  <!ELEMENT JavaScript (competency)+>
+  <!ATTLIST JavaScript value CDATA #REQUIRED>
+   <!--Design-->
+  <!ELEMENT Design (competency)+>
+   <!--Backend-->
+  <!ELEMENT Backend (Databases,Programming_languages)>
+  <!ELEMENT Databases (competency+)>
+  <!ELEMENT Programming_languages (competency+)>
+   <!--Tools-->
+  <!ELEMENT Tools (competency)+>
+   <!--Общие-->
+  <!ELEMENT competency EMPTY>
+  <!ATTLIST competency in CDATA #REQUIRED>
+  <!ATTLIST competency value CDATA #REQUIRED>
+]>
+<Skills>
+    <Frontend>
+        <competency in="HTML" value="кое-что умею" />
+        <CSS value="средненько">
+            <competency in="Bootstrap" value="успешно изменяю чужие шаблоны" />
+        </CSS>
+        <JavaScript value="чайник">
+            <competency in="jQuery" value="умею обращаться к элементам" />
+            <competency in="AJAX" value="мало что умею, но знаю что такое" />
+        </JavaScript>
+    </Frontend>
+    <Design>
+        <competency in="Photoshop" value="на четверочку" />
+        <competency in="CorelDRAW" value="на троечку" />
+    </Design>
+    <Backend>
+        <Databases>
+            <competency in="MySQL" value="напишу запрос, но не по трем таблицам" />
+        </Databases>
+        <Programming_languages>
+            <competency in="PHP" value="удовлетворительно" />
+        </Programming_languages>
+    </Backend>
+    <Tools>
+        <competency in="Git" value="смогу закинуть сайт в репозиторий" />
+        <competency in="Trello" value="и получить новую задачу" />
+    </Tools>
+</Skills>
