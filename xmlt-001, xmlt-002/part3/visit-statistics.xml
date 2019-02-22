@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE visit-statistics [
+  <!ELEMENT visit-statistics (most-frequent-ip,platforms,ips)>
+    <!--most-frequent-ip-->
+  <!ELEMENT most-frequent-ip (ip)>
+   <!--platforms-->
+  <!ELEMENT platforms (desktop, mobile, unknown)>
+  <!ELEMENT desktop (OS*)>
+  <!ELEMENT mobile (OS*)>
+  <!ELEMENT unknown (OS*)>
+  <!ELEMENT OS EMPTY>
+  <!ATTLIST OS name CDATA #REQUIRED>
+  <!ATTLIST OS frequency CDATA #REQUIRED>  
+   <!--ips-->
+ <!ELEMENT ips (ip+)>
+   <!--Общие-->
+  <!ELEMENT ip EMPTY>
+  <!ATTLIST ip addr CDATA #REQUIRED>
+  <!ATTLIST ip frequency CDATA #REQUIRED>
+]>
+<visit-statistics>
+    <most-frequent-ip>
+        <ip addr="077.234.203.101" frequency="12" />
+    </most-frequent-ip>
+    <platforms>
+        <desktop>
+            <OS name="Windows" frequency="87" />
+            <OS name="Linux" frequency="8" />
+            <OS name="MacOS" frequency="6" />
+        </desktop>
+        <mobile>
+            <OS name="Android" frequency="10" />
+            <OS name="iOS" frequency="5" />
+        </mobile>
+        <unknown>
+            <OS name="TelegramBot" frequency="2" />
+            <OS name="vkShare" frequency="1" />
+        </unknown>
+    </platforms>
+    <ips>
+        <ip addr="077.234.203.101" frequency="12" />
+        <ip addr="005.144.096.251" frequency="11" />
+        <ip addr="081.222.086.058" frequency="6" />
+        <ip addr="091.122.189.004" frequency="12" />
+        <ip addr="005.164.066.173" frequency="4" />
+    </ips>
+</visit-statistics>
