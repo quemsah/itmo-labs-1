@@ -1,65 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE collection [
-<!ELEMENT Навыки (Фронтэнд,Дизайн,Бэкэнд,Вспомогательные_инструменты)>
-<!ATTLIST Навыки
+<!ELEMENT Navyki (Frontehnd,Dizajn,Behkehnd,Vspomogatelnye_instrumenty)>
+<!ATTLIST Navyki
   xmlns CDATA #FIXED ''>
-<!ELEMENT Фронтэнд (степень_осведомленности,CSS,JavaScript)>
-<!ATTLIST Фронтэнд
+<!ELEMENT Frontehnd (stepen_osvedomlennosti,CSS,JavaScript)>
+<!ATTLIST Frontehnd
   xmlns CDATA #FIXED ''>
-<!ELEMENT Дизайн (степень_осведомленности)+>
-<!ATTLIST Дизайн
+<!ELEMENT Dizajn (stepen_osvedomlennosti)+>
+<!ATTLIST Dizajn
   xmlns CDATA #FIXED ''>
-<!ELEMENT Бэкэнд (Базы_данных,Языки)>
-<!ATTLIST Бэкэнд
+<!ELEMENT Behkehnd (Bazy_dannyh,YAzyki)>
+<!ATTLIST Behkehnd
   xmlns CDATA #FIXED ''>
-<!ELEMENT Вспомогательные_инструменты (степень_осведомленности)+>
-<!ATTLIST Вспомогательные_инструменты
+<!ELEMENT Vspomogatelnye_instrumenty (stepen_osvedomlennosti)+>
+<!ATTLIST Vspomogatelnye_instrumenty
   xmlns CDATA #FIXED ''>
-<!ELEMENT CSS (степень_осведомленности)>
+<!ELEMENT CSS (stepen_osvedomlennosti)>
 <!ATTLIST CSS
   xmlns CDATA #FIXED ''
-  значение NMTOKEN #REQUIRED>
-<!ELEMENT JavaScript (степень_осведомленности)+>
+  znachenie NMTOKEN #REQUIRED>
+<!ELEMENT JavaScript (stepen_osvedomlennosti)+>
 <!ATTLIST JavaScript
   xmlns CDATA #FIXED ''
-  значение NMTOKEN #REQUIRED>
-<!ELEMENT Базы_данных (степень_осведомленности)>
-<!ATTLIST Базы_данных
+  znachenie NMTOKEN #REQUIRED>
+<!ELEMENT Bazy_dannyh (stepen_osvedomlennosti)>
+<!ATTLIST Bazy_dannyh
   xmlns CDATA #FIXED ''>
-<!ELEMENT Языки (степень_осведомленности)>
-<!ATTLIST Языки
+<!ELEMENT YAzyki (stepen_osvedomlennosti)>
+<!ATTLIST YAzyki
   xmlns CDATA #FIXED ''>
-<!ELEMENT степень_осведомленности EMPTY>
-<!ATTLIST степень_осведомленности
+<!ELEMENT stepen_osvedomlennosti EMPTY>
+<!ATTLIST stepen_osvedomlennosti
   xmlns CDATA #FIXED ''
-  в NMTOKEN #REQUIRED
-  значение CDATA #REQUIRED>
+  v NMTOKEN #REQUIRED
+  znachenie CDATA #REQUIRED>
 ]>
-<Навыки>
-    <Фронтэнд>
-        <степень_осведомленности в="HTML" значение="кое-что умею" />
-        <CSS значение="средненько">
-            <степень_осведомленности в="Bootstrap" значение="успешно изменяю чужие шаблоны" />
+<Navyki>
+    <Frontehnd>
+        <stepen_osvedomlennosti v="HTML" znachenie="koe-chto umeyu" />
+        <CSS znachenie="srednen'ko">
+            <stepen_osvedomlennosti v="Bootstrap" znachenie="uspeshno izmenyayu chuzhie shablony" />
         </CSS>
-        <JavaScript значение="чайник">
-            <степень_осведомленности в="jQuery" значение="умею обращаться к элементам" />
-            <степень_осведомленности в="AJAX" значение="мало что умею, но знаю что такое" />
+        <JavaScript znachenie="chajnik">
+            <stepen_osvedomlennosti v="jQuery" znachenie="umeyu obrashchat'sya k ehlementam" />
+            <stepen_osvedomlennosti v="AJAX" znachenie="malo chto umeyu, no znayu chto takoe" />
         </JavaScript>
-    </Фронтэнд>
-    <Дизайн>
-        <степень_осведомленности в="Photoshop" значение="на четверочку" />
-        <степень_осведомленности в="CorelDRAW" значение="на троечку" />
-    </Дизайн>
-    <Бэкэнд>
-        <Базы_данных>
-            <степень_осведомленности в="MySQL" значение="напишу запрос, но не по трем таблицам" />
-        </Базы_данных>
-        <Языки>
-            <степень_осведомленности в="PHP" значение="удовлетворительно" />
-        </Языки>
-    </Бэкэнд>
-    <Вспомогательные_инструменты>
-        <степень_осведомленности в="Git" значение="смогу закинуть сайт в репозиторий" />
-        <степень_осведомленности в="Trello" значение="и получить новую задачу" />
-    </Вспомогательные_инструменты>
-</Навыки>
+    </Frontehnd>
+    <Dizajn>
+        <stepen_osvedomlennosti v="Photoshop" znachenie="na chetverochku" />
+        <stepen_osvedomlennosti v="CorelDRAW" znachenie="na troechku" />
+    </Dizajn>
+    <Behkehnd>
+        <Bazy_dannyh>
+            <stepen_osvedomlennosti v="MySQL" znachenie="napishu zapros, no ne po trem tablicam" />
+        </Bazy_dannyh>
+        <YAzyki>
+            <stepen_osvedomlennosti v="PHP" znachenie="udovletvoritelno" />
+        </YAzyki>
+    </Behkehnd>
+    <Vspomogatelnye_instrumenty>
+        <stepen_osvedomlennosti v="Git" znachenie="smogu zakinut' sajt v repozitorij" />
+        <stepen_osvedomlennosti v="Trello" znachenie="i poluchit' novuyu zadachu" />
+    </Vspomogatelnye_instrumenty>
+</Navyki>
+
