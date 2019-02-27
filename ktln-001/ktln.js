@@ -1,85 +1,75 @@
 function build(arr) {
-    let t = arr.filter(word => word != "");
-    console.log(arr);
-    console.log(t);
+    const t = arr.filter(word => word != "");
     return t.join(' ');
 }
-document.write(build(['сборка', 'кажется', 'работает']) + "<br>");
 
 new function main() {
-    document.write(three([5,7,3],0) + "<br>");
+    console.log(russian(1234));
 };
 
-/*fun three(digs: List<String>, f: Int): String {
-    var d2 = digits(digs[0].toInt());
-    if (f == 1) d2 = fem(d2);
-
-    val x = digs.size;
-    if (x == 3) {
-        if (digs[1] == "1") return build(listOf(cents(digs[2].toInt()), dozen(digs[0].toInt())))
-        return build(listOf(cents(digs[2].toInt()), dozens(digs[1].toInt()), d2))
-    } else {
-        if (x == 2) {
-            if (digs[1] == "1") return dozen(digs[0].toInt())
-            return build(listOf(dozens(digs[1].toInt()), d2))
-        } else {
-            return d2
-        }
-    }
-
-}*/
-
 function three(digs, f) {
-    var d2 = digits(parseInt(digs[0]));
+    let d2 = digits(parseInt(digs[0]));
     if (f == 1) d2 = fem(d2);
-    var x = digs.length;
+    const x = digs.length;
     if (x == 3) {
-        if (digs[1] == "1") return build(Array.of(cents(parseInt(digs[2])), dozen(parseInt(digs[0]))))
-        return build(Array.of(cents(parseInt(digs[2])), dozens(parseInt(digs[1])), d2))
-    } 
+        if (digs[1] == "1") return build(Array.of(cents(parseInt(digs[2])), dozen(parseInt(digs[0]))));
+        return build(Array.of(cents(parseInt(digs[2])), dozens(parseInt(digs[1])), d2));
+    }
     else {
         if (x == 2) {
-            if (digs[1] == "1") return dozen(parseInt(digs[0]))
-            return build(Array.of(dozens(parseInt(digs[1])), d2))
+            if (digs[1] == "1") return dozen(parseInt(digs[0]));
+            return build(Array.of(dozens(parseInt(digs[1])), d2));
         } else {
-            return d2
+            return d2;
         }
     }
 }
 
+function digits(x) { return ["", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"][x]; };
 
+function dozen(x) { return ["десять", "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"][x]; };
 
+function dozens(x) { return ["", "", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"][x]; };
 
-function digits(x) {
-    var digits = ["", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"];
-    return digits[x];
-};
+function cents(x) { return ["", "сто", "двести", "триста", "четыреста", "пятьсот", "шестьсот", "семьсот", "восемьсот", "девятьсот"][x]; };
 
-function dozen(x) {
-    var dozen = ["десять", "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"];
-    return dozen[x];
-};
-
-function dozens(x) {
-    var dozens = ["", "", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"];
-    return dozens[x];
-};
-
-function cents(x) {
-    var cents = ["", "сто", "двести", "триста", "четыреста", "пятьсот", "шестьсот", "семьсот", "восемьсот", "девятьсот"];
-    return cents[x];
-};
-// если х = один то вернуть одна
-// если х = два то вернуть две
-//в ином случае венруть х
 function fem(x) {
     switch (x) {
-        case "один":
-            x = "одна"
-            break;
-        case "два":
-            x = "две"
-            break;
+    case "один":
+        return "одна";
+        break;
+    case "два":
+        return "две";
+        break;
+    default:
+        return x;
     }
-    return x;
 };
+
+function russian(n) {
+    const t = n.toString().split("").reverse().join("");
+    const digs = t.split("");
+    if (digs.length > 3) {
+        const s1 = parseInt(Math.floor(parseFloat(n) / 1000));
+        let ts = " тысяч";
+        const s21 = s1.toString().split("").reverse().join("") + "0";
+        let s2 = s21.split("").slice(0, s21.length - 1);
+        if (parseInt(s2[1]) != 1 && parseInt(s2[0]) == 1) {
+            ts += "а";
+        } else {
+            if ((parseInt(s2[1]) != 1) && (parseInt(s2[0]) > 0 && parseInt(s2[0]) < 5)) ts += "и";
+        }
+        ts += " ";
+        let s4 = digs.slice(0, 3);
+        if (parseInt(s4[2]) == 0) {
+            s4 = s4.slice(0, 2);
+            if (parseInt(s4[1]) == 0) s4 = Array.of(s4[0]);
+        }
+        if (s4.length == 4) s4 = s4.slice(0, 2);
+        if (s2.length == 4) s2 = s2.slice(0, 2);
+        const res = three(s2, 1) + ts + three(s4, 0);
+        return res.trim();
+    } else {
+        return (three(digs, 0));
+    }
+}
