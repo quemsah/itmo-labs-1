@@ -487,11 +487,7 @@ ul.actions.stacked li:first-child {
 	}
 }
 
-@media screen and (max-width: 480px) {
-	#header .logo span {
-		display: none;
-	}
-}
+
 
 #main {
 	background-color: #2a2f4a;
