@@ -1,0 +1,1 @@
+# [https://kodaktor.ru/func_f9722](https://kodaktor.ru/func_f9722)
