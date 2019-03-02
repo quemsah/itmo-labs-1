@@ -1,3 +1,5 @@
 import smth from './module.js'
-document.getElementById('answer').innerHTML += smth(2,3)   
+
+document.getElementById('answer').innerHTML += smth(1,1);
+
 
