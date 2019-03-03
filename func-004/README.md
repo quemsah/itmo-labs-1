@@ -1,2 +1,2 @@
-## Для того, чтобы работало необходимо захостить на веб-сервере, потому что подгрузка скриптов(import) с файловой системы запрещена политикой безопасности, подробнее : [Тык](https://ru.stackoverflow.com/questions/867769/Как-избежать-access-to-script-from-origin-null-has-been-blocked-by-cors-policy)
+## Для того, чтобы работало необходимо захостить на веб-сервере, потому что подгрузка скриптов(import) с файловой системы запрещена политикой безопасности, подробнее : [тык](https://ru.stackoverflow.com/questions/867769/Как-избежать-access-to-script-from-origin-null-has-been-blocked-by-cors-policy)
 ### А можно просто посмотреть на кодакторе [https://kodaktor.ru/func_b3a5f](https://kodaktor.ru/func_b3a5f)
