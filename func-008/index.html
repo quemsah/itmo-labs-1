@@ -5,6 +5,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <link rel="stylesheet" href="../index.css">
+      <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
    </head>
    <body class="is-preload">
       <div id="wrapper">
@@ -18,14 +19,26 @@
                      <h1>func-008</h1>
                   </header>
                   <div class="сol-12-medium">
-                     <p id="answer"></p>
-                     1. Отправьте POST-запрос на адрес 3336.kodaktor.ru/funcpsst
-                     2. Вы получите массив текстов тел функций
-                     3. Получите по нему с помощью метода map массив функций, каждая из которых способна получить сколько угодно аргументов
-                     4. Подсчитайте значение первой функции от значений этих текстовых полей:
-                     <input value="3" class="f0"><input value="4" class="f0"><input value="5" class="f0"><input value="10" class="f0">
-                     5. Подсчитайте значение второй функции от значений этих текстовых полей: 
-                     <input value="1" class="f1"><input value="2" class="f1"><input value="3" class="f1"><input value="4" class="f1"><input value="5" class="f1"><input value="6" class="f1"><input value="7" class="f1"><input value="8" class="f1"><input value="9" class="f1"><input value="10" class="f1">  
+                     <p id="answer">
+                        Пожалуйста, сделайте следующее:
+                        1. Отправьте POST-запрос на адрес 3336.kodaktor.ru/funcpsst
+                        2. Вы получите массив текстов тел функций
+                        3. Получите по нему с помощью метода map массив функций, каждая из которых способна получить сколько угодно аргументов
+                        4. Подсчитайте значение первой функции от значений этих текстовых полей:
+                        <input value="3" class="f0"><input value="4" class="f0"><input value="5" class="f0"><input value="10" class="f0">
+                        5. Подсчитайте значение второй функции от значений этих текстовых полей: 
+                        <input value="1" class="f1"><input value="2" class="f1"><input value="3" class="f1"><input value="4" class="f1"><input value="5" class="f1"><input value="6" class="f1"><input value="7" class="f1"><input value="8" class="f1"><input value="9" class="f1"><input value="10" class="f1">
+                     </p>
+                     <div class="col-6 col-12-xsmall">
+                        Хочу
+                        <br>
+                        <input type="number" name="demo-email" id="demo-input" value="" placeholder="Email" />
+                        <br>
+                        инпутов
+                        <br>
+                     </div>
+                     <div id="myDiv"> </div>
+                     <button id="btnClicker">Подавай</button>
                      <script src="./index.js"></script>
                   </div>
                </div>
