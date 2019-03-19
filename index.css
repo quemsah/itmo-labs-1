@@ -533,6 +533,10 @@ hr.major {
 	width: 100%;
 }
 
+.row>.col-12-medium {
+		width: 16.66667%;
+	}
+
 .row>.off-12 {
 	margin-left: 100%;
 }
@@ -645,6 +649,9 @@ hr.major {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+	}
+    .row>.col-12-medium {
+		width: 16.66667%;
 	}
 	.row>* {
 		box-sizing: border-box;
@@ -831,6 +838,9 @@ hr.major {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+	}
+	.row>.col-12-medium {
+		width: 20%;
 	}
 	.row>* {
 		box-sizing: border-box;
@@ -1112,7 +1122,7 @@ hr.major {
 		margin-left: 91.6666666667%;
 	}
 	.row>.col-12-medium {
-		width: 33.33%;
+		width: 25%;
 	}
 	.row>.off-12-medium {
 		margin-left: 100%;
