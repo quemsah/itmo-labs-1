@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>async-tasks</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="../index.css">
+      <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+   </head>
+   <body class="is-preload">
+      <div id="wrapper">
+         <header id="header">
+            <a href="../index.html" class="logo"><span>&larr; Назад</span></a>
+         </header>
+         <div id="main" class="alt">
+            <section id="one">
+               <div class="inner">
+                  <header class="major">
+                     <h1>async-tasks</h1>
+                  </header>
+                  <div class="сol-12-medium">
+                     <p>Дан массив values из N значений, например N=3 
+                        и даны сервисы, адреса которых находятся в массиве URLs
+                     </p>
+                     <p>обращаемся к сервису 1, передавая ему значение 1 получаем от него ответ 1 
+                     </p>
+                     <p>обращаемся к сервису 2, передавая ему значение 2 и ответ 1 (два аргумента) получаем от него ответ 2 
+                     </p>
+                     <p>обращаемся к сервису 3, передавая ему значение 3 и ответ 2 (два аргумента) получаем от него ответ 3
+                     </p>
+                     <p>Используйте цикл, в теле которого слово await и слово fetch встречаются по 1 разу 
+                     </p>
+                     <h1>Смотри в консоль</h1>
+                     <ol id="values">
+                        <li>10</li>
+                        <li>20</li>
+                        <li>30</li>
+                     </ol>
+                     <ol id="values">
+                        <li>https://kodaktor.ru/api/m/</li>
+                        <li>https://kodaktor.ru/api/MS2/</li>
+                        <li>https://kodaktor.ru/api/MS3/</li>
+                     </ol>
+                     <script src="./index.js"></script>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </body>
+</html>
