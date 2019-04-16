@@ -4,9 +4,9 @@ let path = require('path');
 let conf = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, './js'),
+        path: path.resolve(__dirname, './js-main'),
         filename: 'main.js',
-        publicPath: 'js/'
+        publicPath: 'js-main/'
       },
     devServer: {
         overlay: true
