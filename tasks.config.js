@@ -94,8 +94,13 @@ export default [{
     codeLink: "https://github.com/quemsah/itmo-labs/tree/master/rxjs-task",
     ansLink: "./rxjs-task/"
 }, {
-    name: "protochain",
-    taskLink: "https://kodaktor.ru/05042019",
+    name: "prot-001",
+    taskLink: "https://kodaktor.ru/prot_001",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/g/array.prototype"
+}, {
+    name: "prot-002",
+    taskLink: "https://kodaktor.ru/prot_002",
     codeLink: "",
     ansLink: "https://repl.it/@quemsah/protochain"
 }]
