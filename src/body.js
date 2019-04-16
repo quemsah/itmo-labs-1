@@ -1,9 +1,5 @@
-import {
-    setAttributes
-} from './task';
-import {
-    Task
-} from './task';
+import {setAttributes} from './task';
+import {Task} from './task';
 import tasks from '../tasks.config.js'
 
 export default class Body {
