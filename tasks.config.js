@@ -1,0 +1,101 @@
+export default [{
+    name: "xmlt-001",
+    taskLink: "https://kodaktor.ru/g/web_intro",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/xmlt-001",
+    ansLink: "./xmlt-001/"
+}, {
+    name: "xmlt-002",
+    taskLink: "https://kodaktor.ru/g/xml_intro",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/xmlt-002",
+    ansLink: "./xmlt-002/"
+}, {
+    name: "xmlt-003",
+    taskLink: "https://kodaktor.ru/xmlt_003",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/xmlt_c5a87"
+}, {
+    name: "tern-001",
+    taskLink: "https://kodaktor.ru/tern_001",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/tern-001",
+    ansLink: ""
+}, {
+    name: "jsin-001",
+    taskLink: "https://kodaktor.ru/jsin_001",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/jsin-001",
+    ansLink: "./jsin-001/"
+}, {
+    name: "iife",
+    taskLink: "https://kodaktor.ru/g/iife",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/2f3ffe3_0ae34"
+}, {
+    name: "ktln-001",
+    taskLink: "https://kodaktor.ru/22022019",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/ktln-001",
+    ansLink: "./ktln-001/"
+}, {
+    name: "func-001",
+    taskLink: "https://kodaktor.ru/func_001",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/func-001",
+    ansLink: ""
+}, {
+    name: "func-002",
+    taskLink: "",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/func_f9722"
+}, {
+    name: "func-003",
+    taskLink: "",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/func_f515b"
+}, {
+    name: "func-004",
+    taskLink: "https://kodaktor.ru/func_004",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/func-004",
+    ansLink: "https://kodaktor.ru/func_b3a5f"
+}, {
+    name: "func-005",
+    taskLink: "",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/func_45fb9"
+}, {
+    name: "func-006",
+    taskLink: "",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "func-007",
+    taskLink: "",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/func_6e900"
+}, {
+    name: "func-008",
+    taskLink: "",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/func_d3c79"
+}, {
+    name: "func-009",
+    taskLink: "",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/func_e4a8e"
+}, {
+    name: "func-010",
+    taskLink: "https://kodaktor.ru/func_010",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/func_610f5"
+}, {
+    name: "async-task",
+    taskLink: "https://kodaktor.ru/async_ed538",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/async-task",
+    ansLink: "./async-task/"
+}, {
+    name: "rxjs-task",
+    taskLink: "https://kodaktor.ru/13e5570",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/rxjs-task",
+    ansLink: "./rxjs-task/"
+}, {
+    name: "protochain",
+    taskLink: "https://kodaktor.ru/05042019",
+    codeLink: "",
+    ansLink: "https://repl.it/@quemsah/protochain"
+}]
