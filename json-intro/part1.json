@@ -1,57 +1,47 @@
-{  
-   "table":{  
-      "student":[  
-         {  
-            "otmetka":[  
-               {  
-                  "disciplina":"Мультимедиа",
-                  "text":"3"
-               }
-            ],
-            "name":"Иванов"
-         },
-         {  
-            "otmetka":[  
-               {  
-                  "disciplina":"Мультимедиа",
-                  "text":"3"
-               },
-               {  
-                  "disciplina":"Веб-дизайн",
-                  "text":"4"
-               },
-               {  
-                  "disciplina":"Графика",
-                  "text":"5"
-               },
-               {  
-                  "disciplina":"Логика",
-                  "text":"5"
-               }
-            ],
-            "name":"Петров"
-         },
-         {  
-            "otmetka":[  
-               {  
-                  "disciplina":"Мультимедиа",
-                  "text":"3"
-               },
-               {  
-                  "disciplina":"Веб-дизайн",
-                  "text":"4"
-               },
-               {  
-                  "disciplina":"Графика",
-                  "text":"5"
-               },
-               {  
-                  "disciplina":"Логика",
-                  "text":"4"
-               }
-            ],
-            "name":"Сидоренко"
-         }
-      ]
+{
+   "table": {
+      "student": [{
+         "name": "Иванов",
+         "otmetka": [{
+            "disciplina": "Мультимедиа",
+            "value": 3
+         }, {
+            "disciplina": "Веб-дизайн",
+            "value": 2
+         }, {
+            "disciplina": "Графика",
+            "value": 5
+         }]
+      }, {
+         "name": "Петров",
+         "otmetka": [{
+            "disciplina": "Мультимедиа",
+            "value": 2
+         }, {
+            "disciplina": "Веб-дизайн",
+            "value": 4
+         }, {
+            "disciplina": "Графика",
+            "value": 5
+         }, {
+            "disciplina": "Логика",
+            "value": 5
+         }]
+      }, {
+         "name": "Сидоренко",
+         "otmetka": [{
+            "disciplina": "Мультимедиа",
+            "value": 3
+         }, {
+            "disciplina": "Веб-дизайн",
+            "value": 4
+         }, {
+            "disciplina": "Графика",
+            "value": 5
+         }, {
+            "disciplina": "Логика",
+            "value": 4
+         }]
+      }]
    }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "itmo-labs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Лабораторные работы по дисциплине Проектирование и анализ языков веб-решений",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",

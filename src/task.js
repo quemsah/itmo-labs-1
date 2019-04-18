@@ -1,3 +1,4 @@
+//реализует функциональный подход к добавлению аттрибутов к элементу
 const setAttributes = (el, attrs) => {
     for (var key in attrs) {
         (key != 'text') ? el.setAttribute(key, attrs[key]): el.textContent = attrs[key]
@@ -5,13 +6,13 @@ const setAttributes = (el, attrs) => {
     return el;
 }
 export {setAttributes};
-
+//создает кнопку
 const createLink = (href, text) => setAttributes(document.createElement('a'), {
     "class": "button primary fit small",
     "href": href,
     "text": text
 })
-
+//рендерит задачу
 export class Task {
     constructor(props) {
         this.props = props

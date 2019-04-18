@@ -7,22 +7,21 @@ let conf = {
         path: path.resolve(__dirname, './js-main'),
         filename: 'main.js',
         publicPath: 'js-main/'
-      },
+    },
     devServer: {
         overlay: true
     },
-    module: {        rules: [
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                // exclude: '/node_modules/'
-            }
-        ]
+    module: {
+        rules: [{
+            test: /\.js$/,
+            loader: 'babel-loader',
+            // exclude: '/node_modules/'
+        }]
     }
 };
 module.exports = (env, options) => {
-    conf.devtool = options.mode === "production" ? 
-                    false :
-                    "cheap-module-eval-source-map";
+    conf.devtool = options.mode === "production" ?
+        false :
+        "cheap-module-eval-source-map";
     return conf;
 };

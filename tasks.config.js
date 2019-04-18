@@ -59,7 +59,7 @@ export default [{
     codeLink: "",
     ansLink: "https://kodaktor.ru/func_45fb9"
 }, {
-    name: "func-006",
+    name: "! func-006",
     taskLink: "",
     codeLink: "",
     ansLink: ""
@@ -103,4 +103,69 @@ export default [{
     taskLink: "https://kodaktor.ru/prot_002",
     codeLink: "",
     ansLink: "https://repl.it/@quemsah/protochain"
+}, {
+    name: "! jsnd-001",
+    taskLink: "https://kodaktor.ru/js01_intro_lr.pdf",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! json-intro",
+    taskLink: "https://kodaktor.ru/g/json_intro",
+    codeLink: "",
+    ansLink: "./json-intro/"
+}, {
+    name: "! startask",
+    taskLink: "https://kodaktor.ru/startask",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! types-out",
+    taskLink: "https://kodaktor.ru/types_out",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! ips-task",
+    taskLink: "https://kodaktor.ru/g/ips_task",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! rsch-001",
+    taskLink: "https://kodaktor.ru/g/rsch_001",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! evnt-001",
+    taskLink: "https://kodaktor.ru/g/evnt_001",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! evnt-002",
+    taskLink: "https://kodaktor.ru/evnt_002",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! evnt-003",
+    taskLink: "https://kodaktor.ru/evnt_003",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! babl-001",
+    taskLink: "https://kodaktor.ru/babl_001",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! babl-001",
+    taskLink: "https://kodaktor.ru/babl_002",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! iter-001",
+    taskLink: "https://kodaktor.ru/iter_001",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "! mixer",
+    taskLink: "https://kodaktor.ru/g/mixer",
+    codeLink: "",
+    ansLink: ""
 }]
