@@ -59,10 +59,10 @@ export default [{
     codeLink: "",
     ansLink: "https://kodaktor.ru/func_45fb9"
 }, {
-    name: "! func-006",
-    taskLink: "",
+    name: "func-006",
+    taskLink: "https://kodaktor.ru/func_006",
     codeLink: "",
-    ansLink: ""
+    ansLink: "https://kodaktor.ru/func_ac156"
 }, {
     name: "func-007",
     taskLink: "",
@@ -114,10 +114,10 @@ export default [{
     codeLink: "",
     ansLink: "./json-intro/"
 }, {
-    name: "! startask",
+    name: "startask",
     taskLink: "https://kodaktor.ru/startask",
     codeLink: "",
-    ansLink: ""
+    ansLink: "https://kodaktor.ru/startask_83e6b"
 }, {
     name: "! types-out",
     taskLink: "https://kodaktor.ru/types_out",
@@ -135,7 +135,7 @@ export default [{
     ansLink: ""
 }, {
     name: "! evnt-001",
-    taskLink: "https://kodaktor.ru/g/evnt_001",
+    taskLink: "https://kodaktor.ru/evnt_001",
     codeLink: "",
     ansLink: ""
 }, {
@@ -154,15 +154,15 @@ export default [{
     codeLink: "",
     ansLink: ""
 }, {
-    name: "! babl-001",
+    name: "! babl-002",
     taskLink: "https://kodaktor.ru/babl_002",
     codeLink: "",
     ansLink: ""
 }, {
-    name: "! iter-001",
+    name: "iter-001",
     taskLink: "https://kodaktor.ru/iter_001",
-    codeLink: "",
-    ansLink: ""
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/iter-001",
+    ansLink: "https://kodaktor.ru/iter_9426f"
 }, {
     name: "! mixer",
     taskLink: "https://kodaktor.ru/g/mixer",
