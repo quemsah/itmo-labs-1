@@ -134,15 +134,15 @@ export default [{
     codeLink: "",
     ansLink: ""
 }, {
-    name: "! evnt-001",
+    name: "evnt-001",
     taskLink: "https://kodaktor.ru/evnt_001",
     codeLink: "",
-    ansLink: ""
+    ansLink: "https://kodaktor.ru/evnt_7ce20"
 }, {
-    name: "! evnt-002",
+    name: "evnt-002",
     taskLink: "https://kodaktor.ru/evnt_002",
     codeLink: "",
-    ansLink: ""
+    ansLink: "https://kodaktor.ru/custom_b69c2"
 }, {
     name: "! evnt-003",
     taskLink: "https://kodaktor.ru/evnt_003",
@@ -154,10 +154,10 @@ export default [{
     codeLink: "",
     ansLink: ""
 }, {
-    name: "! babl-002",
+    name: "babl-002",
     taskLink: "https://kodaktor.ru/babl_002",
     codeLink: "",
-    ansLink: ""
+    ansLink: "https://kodaktor.ru/bind02032018_d12c1"
 }, {
     name: "iter-001",
     taskLink: "https://kodaktor.ru/iter_001",
@@ -168,4 +168,10 @@ export default [{
     taskLink: "https://kodaktor.ru/g/mixer",
     codeLink: "",
     ansLink: ""
+}, {
+    name: "fetch-audio",
+    taskLink: "",
+    codeLink: "https://codepen.io/quemsah/pen/VROdby",
+    ansLink: "./fetch-audio/"
 }]
+
