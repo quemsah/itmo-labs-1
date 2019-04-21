@@ -178,6 +178,21 @@ export default [{
     taskLink: "",
     codeLink: "",
     ansLink: ""
+}, {
+    name: "~~ xsl-intro",
+    taskLink: "https://kodaktor.ru/g/xsl_intro",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ cart",
+    taskLink: "https://kodaktor.ru/g/cart",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ bndl-001",
+    taskLink: "",
+    codeLink: "",
+    ansLink: "https://kodaktor.ru/g/bndl_001"
 }]
 //поправить кнопку и все протестировать(
 
