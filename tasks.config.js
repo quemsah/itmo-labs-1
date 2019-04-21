@@ -104,12 +104,12 @@ export default [{
     codeLink: "",
     ansLink: "https://repl.it/@quemsah/protochain"
 }, {
-    name: "! jsnd-001",
+    name: "~~ jsnd-001",
     taskLink: "https://kodaktor.ru/js01_intro_lr.pdf",
     codeLink: "",
     ansLink: ""
 }, {
-    name: "! json-intro",
+    name: "~~ json-intro",
     taskLink: "https://kodaktor.ru/g/json_intro",
     codeLink: "",
     ansLink: "./json-intro/"
@@ -119,37 +119,37 @@ export default [{
     codeLink: "",
     ansLink: "https://kodaktor.ru/startask_83e6b"
 }, {
-    name: "! types-out",
+    name: "~~ types-out",
     taskLink: "https://kodaktor.ru/types_out",
     codeLink: "",
     ansLink: ""
 }, {
-    name: "! ips-task",
+    name: "~~ ips-task",
     taskLink: "https://kodaktor.ru/g/ips_task",
     codeLink: "",
     ansLink: ""
 }, {
-    name: "! rsch-001",
+    name: "~~ rsch-001",
     taskLink: "https://kodaktor.ru/g/rsch_001",
     codeLink: "",
     ansLink: ""
 }, {
     name: "evnt-001",
     taskLink: "https://kodaktor.ru/evnt_001",
-    codeLink: "",
-    ansLink: "https://kodaktor.ru/evnt_7ce20"
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/evnt-001",
+    ansLink: "https://kodaktor.ru/evnt_fc3ce"
 }, {
     name: "evnt-002",
     taskLink: "https://kodaktor.ru/evnt_002",
     codeLink: "",
     ansLink: "https://kodaktor.ru/custom_b69c2"
 }, {
-    name: "! evnt-003",
+    name: "evnt-003",
     taskLink: "https://kodaktor.ru/evnt_003",
-    codeLink: "",
-    ansLink: ""
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/evnt-003",
+    ansLink: "./evnt-003/"
 }, {
-    name: "! babl-001",
+    name: "~~ babl-001",
     taskLink: "https://kodaktor.ru/babl_001",
     codeLink: "",
     ansLink: ""
@@ -164,14 +164,19 @@ export default [{
     codeLink: "https://github.com/quemsah/itmo-labs/tree/master/iter-001",
     ansLink: "https://kodaktor.ru/iter_9426f"
 }, {
-    name: "! mixer",
+    name: "~~ mixer",
     taskLink: "https://kodaktor.ru/g/mixer",
     codeLink: "",
     ansLink: ""
 }, {
-    name: "fetch-audio",
+    name: "~~ fetch-audio",
     taskLink: "",
     codeLink: "https://codepen.io/quemsah/pen/VROdby",
     ansLink: "./fetch-audio/"
+}, {
+    name: "~ to do: ->",
+    taskLink: "",
+    codeLink: "",
+    ansLink: ""
 }]
 
