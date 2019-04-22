@@ -119,10 +119,10 @@ export default [{
     codeLink: "",
     ansLink: "https://kodaktor.ru/startask_83e6b"
 }, {
-    name: "~~ types-out",
+    name: "types-out",
     taskLink: "https://kodaktor.ru/types_out",
     codeLink: "",
-    ansLink: ""
+    ansLink: "https://kodaktor.ru/types_c2766"
 }, {
     name: "ips-task",
     taskLink: "https://kodaktor.ru/g/ips_task",
@@ -189,10 +189,15 @@ export default [{
     codeLink: "",
     ansLink: ""
 }, {
-    name: "~~ bndl-001",
-    taskLink: "",
+    name: "bndl-001",
+    taskLink: "https://kodaktor.ru/g/bndl_001",
     codeLink: "",
-    ansLink: "https://kodaktor.ru/g/bndl_001"
+    ansLink: "./bndl-001/"
+}, {
+    name: "~~ canvas",
+    taskLink: "http://kodaktor.ru/cnvs/lr_canvas_rates.pdf",
+    codeLink: "",
+    ansLink: ""
 }]
-//поправить кнопку и все протестировать(
+
 
