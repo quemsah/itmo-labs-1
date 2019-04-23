@@ -194,10 +194,48 @@ export default [{
     codeLink: "",
     ansLink: "./bndl-001/"
 }, {
-    name: "canvas",
+    name: "canv-001",
     taskLink: "http://kodaktor.ru/cnvs/lr_canvas_rates.pdf",
-    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/canvas",
-    ansLink: "./canvas/"
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/canv-001",
+    ansLink: "./canv-001/"
+}, {
+    name: "~~ frmw-001",
+    taskLink: "https://kodaktor.ru/frmw_001",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ frmw-002",
+    taskLink: "https://kodaktor.ru/frmw_002",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ frmw-003",
+    taskLink: "https://kodaktor.ru/frmw_003",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ frmw-004",
+    taskLink: "https://kodaktor.ru/frmw_004",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ frmw-005",
+    taskLink: "https://kodaktor.ru/frmw_005",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ frmw-006",
+    taskLink: "https://kodaktor.ru/frmw_006",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ frmw-007",
+    taskLink: "https://kodaktor.ru/frmw_007",
+    codeLink: "",
+    ansLink: ""
+}, {
+    name: "~~ you",
+    taskLink: "https://kodaktor.ru/you",
+    codeLink: "",
+    ansLink: ""
 }]
-
-
