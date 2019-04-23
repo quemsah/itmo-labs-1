@@ -1,27 +1,41 @@
-const getData = async (url) => (await fetch(url)).json();
-const setAttributes = (el, attrs) => {
-  for (var key in attrs)(key != "text") ? el.setAttribute(key, attrs[key]) : el.textContent = attrs[key]
-  return el;
-}
-(async () => {
-  const url = "https://kodaktor.ru/j/rates";
-  const data = await getData(url);
-  console.log(data);
-  
+import * as f from "./funcs.js";
+import Chart from './chart.js';
+
+const url = "https://kodaktor.ru/j/rates";
+let currencies = {};
+
+const makeCanvas = async () => {
+  //считаем валюты currencies
+  let data = {
+    ...await f.getData(url)
+  };
+  Object.keys(data).forEach(function (item) {
+    currencies[data[item].name] = parseFloat(data[item].sell);
+  });
+  //задаем параметры канваса
   const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
-  canvas.setAttribute('width', 300);
-  canvas.setAttribute('height', 120);
-
-  let answer = document.body.querySelector('.answer');
+  canvas.width = 1000;
+  canvas.height = 500;
+  canvas.offset = 10;
+  //материализуем
+  var myChart = new Chart({
+    canvas: canvas,
+    data: currencies
+  });
+  myChart.draw();
+  //удаляем кнопку
+  answer.removeChild(answer.children[1]);
+  //появляем канвас
   answer.appendChild(canvas);
-  answer.appendChild(setAttributes(document.createElement("button"), {
-    "class": "button primary fit small",
-    "style": "width: 30%",
-    "text": "Нажми на меня"
-  }));
+};
 
-  ctx.lineWidth = 2;
-  ctx.strokeStyle = 'red';
-  ctx.strokeRect(1, 2, canvas.width - 2, canvas.height - 2);
-})();
+let answer = document.body.querySelector('.answer')
+let button = f.setAttributes(document.createElement("button"), {
+  "class": "button primary fit small",
+  "style": "width: 30%",
+  "text": "Показать курсы валют"
+});
+button.addEventListener("click", makeCanvas, {
+  once: true
+});
+answer.appendChild(button);

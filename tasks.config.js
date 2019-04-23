@@ -194,10 +194,10 @@ export default [{
     codeLink: "",
     ansLink: "./bndl-001/"
 }, {
-    name: "~~ canvas",
+    name: "canvas",
     taskLink: "http://kodaktor.ru/cnvs/lr_canvas_rates.pdf",
-    codeLink: "",
-    ansLink: ""
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/canvas",
+    ansLink: "./canvas/"
 }]
 
 
