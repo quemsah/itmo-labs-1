@@ -3,6 +3,21 @@
 
 <head>
   <title>canvas</title>
+  <style>
+    #cart {
+      border: 3px dashed green;
+      height: 120px;
+      width: 97%;
+      background: lime;
+    }
+
+    #item {
+      display: block;
+      border: 3px dashed green;
+
+
+    }
+  </style>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="../src/css/index.css">
@@ -16,16 +31,38 @@
     </header>
     <div id="main" class="alt">
       <section id="one">
-        <div class="inner">
-          <header class="major">
-            <h1>canvas</h1>
-          </header>
-          <div class="сol-12-medium">
-            <div class="answer">
-              <script type="module" src="index.js"></script>
-            </div>
+        <header class="major">
+          <h1>canvas</h1>
+        </header>
+        <div class="row">
+
+          <h3 style="width: 33%">Введите бюджет</h3>
+          <input class="button fit small" style="width: 33%" type="text" name="budget" placeholder="225">
+          <button class="button primary fit small" style="width: 33%">Нажми на меня</button>
+          <div class="col-3 ">
+            <p draggable="true">♥️</p>
           </div>
+
+
+          <div id="item" class="col-3 col-12-medium" style="width: 30%" draggable="true">
+            <h3>Булка</h3>
+            <hr>
+            <h3>45</h3>
+          </div>
+
+          <div id="item" class="col-3 col-12-medium" style="width: 30%" draggable="true">
+            <h3>Пиражочек</h3>
+            <hr>
+            <h3>50</h3>
+          </div>
+
         </div>
+        
+        <div class="row">
+          <div id="cart"></div>
+        </div>
+
+        <script type="module" src="index.js"></script>
       </section>
     </div>
   </div>
