@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="../src/css/index.css">
   <style>
     #cart {
-      border: 3px dashed green;
-      height: 220px;
-      width: 90%;
+      border: 3px dashed white;
+      height: 320px;
+      width: 100%;
       background: transparent;
       margin: 10px;
       padding: 0 0 0 0;
@@ -23,10 +23,16 @@
       padding: 0 0 0 0;
     }
 
-    h3 {
+    h2 {
       text-align: center;
       margin-block-end: 0;
       margin: 0 0 0- 0;
+      /* border: 3px solid red; */
+    }
+    h3 {
+      text-align: center;
+      margin-block-end: 0;
+      margin: 0 0 0 0;
       /* border: 3px solid red; */
     }
 
@@ -50,9 +56,7 @@
       background-color: rgba(212, 212, 255, 0.035);
     }
 
-    table td {
-      padding: 0.75em 0.75em;
-    }
+
   </style>
   <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 </head>
@@ -67,33 +71,17 @@
         <header class="major">
           <h1>cart</h1>
         </header>
-        <div class="row">
-
-          <h3 style="width: 33%">Введите бюджет</h3>
+        <h3 style="width: 33%">Введите бюджет</h3>
           <input class="button fit small" style="width: 33%" type="text" name="budget" placeholder="225">
           <button class="button primary fit small" style="width: 33%">Нажми на меня</button>
+        <div class="row">
+
           
-          <div id="item" class="col-3 col-12-medium" style="width: 30%" draggable="true">
-              <h3>Сосиська</h3>
-              <hr>
-              <h3>30</h3>
-            </div>
-
-
-          <div id="item" class="col-3 col-12-medium" style="width: 30%" draggable="true">
-            <h3>Булка</h3>
-            <hr>
-            <h3>45</h3>
-          </div>
-
-          <div id="item" class="col-3 col-12-medium" style="width: 30%" draggable="true">
-            <h3>Пиражочек</h3>
-            <hr>
-            <h3>50</h3>
-          </div>
+          
+          <br><br>
 
         </div>
-
+        <h2>Корзина</h2>
         <div class="row">
           <div id="cart">
             <table style="width:100%">

@@ -1,71 +1,73 @@
-const getData = async (url) => (await fetch(url)).json();
-
 const url = "https://kodaktor.ru/cart_data.json";
+const getData = async (url) => (await fetch(url)).json();
+const makeItem = (name, price) => {
+  var template = document.createElement('template');
+  let result = "<div id='item' class='col-3 col-12-medium' style='width: 31.6%' draggable='true'><h3>" + name + "</h3><hr><h3>" + price + "</h3></div>";
+  template.innerHTML = result;
+  return template.content
+}
+let arraydata = [];
+let total = 0;
 
 (async () => {
   let data = await getData(url);
-  console.log(...[data]);
-
+  Object.keys(data).forEach((key) => {
+    let name = key;
+    let price = data[key];
+    let counter = 0;
+    arraydata.push({
+      name,
+      price,
+      counter
+    })
+  });
+  arraydata.forEach((item) => {
+    document.querySelector('div.row').appendChild(makeItem(item.name, item.price))
+  });
   let budgetButton = document.querySelector('button');
   let budgetInput = document.querySelector('input');
   let budgetH3 = document.querySelector('h3');
-
   budgetButton.addEventListener("click", () => {
-    //console.log(budgetInput.value);
     budgetButton.remove();
     budgetInput.remove();
-    budgetH3.remove();
+    budgetH3.remove()
   });
-
   let item = document.querySelectorAll('#item');
   let cart = document.querySelector('#cart');
-
   cart.addEventListener('dragover', e => e.preventDefault());
-  
-  Array.from(item).forEach( el => {
+  Array.from(item).forEach((el, i) => {
     el.addEventListener('dragstart', event => {
-      let name = event.target.children[0].textContent;
-      let price = event.target.children[2].textContent;
-      let counter = 0;
-      console.log(event.target);
-      let data = JSON.stringify({
-        name: name,
-        price: price,
-        counter: counter
-      });
-      event.dataTransfer.setData(
-        'application/json',
-        data
-      );
-    });
+      event.dataTransfer.setData('application/json', JSON.stringify({
+        name: arraydata[i].name,
+        price: arraydata[i].price,
+        counter: arraydata[i].counter
+      }))
+    })
   });
   cart.addEventListener('drop', e => {
     let data = JSON.parse(e.dataTransfer.getData('application/json'));
     let node = document.createElement("tr");
-    //console.log(node);
+    let smth = arraydata.find(x => x.name === data.name);
+    console.log(smth);
     if (data.counter === 0) {
       let tdName = document.createElement("td");
       let tdPrice = document.createElement("td");
       let tdCount = document.createElement("td");
       let tdSum = document.createElement("td");
-
-      tdName.textContent = data.name;
-      tdPrice.textContent = data.price;
-      tdCount.textContent = ++data.counter;
-      tdSum.textContent = parseInt(data.price) * data.counter;
-      //console.log(data);
+      tdName.textContent = smth.name;
+      tdPrice.textContent = smth.price;
+      tdCount.textContent = ++smth.counter;
+      tdSum.textContent = parseInt(smth.price) * smth.counter;
       node.appendChild(tdName);
       node.appendChild(tdPrice);
       node.appendChild(tdCount);
-      node.appendChild(tdSum);
-      //console.log(node);
+      node.appendChild(tdSum)
     } else {
-      node = document.evaluate("//tr[contains(., '"+data.name+"')]", document, null, XPathResult.ANY_TYPE, null).iterateNext()
-      console.log('smth'+node);
-      node.childNodes[2].textContent = ++data.counter;
-      node.childNodes[3].textContent = parseInt(data.price) * data.counter;
+      node = document.evaluate("//tr[contains(., '" + smth.name + "')]", document, null, XPathResult.ANY_TYPE, null).iterateNext()
+      console.log('smth' + node);
+      node.childNodes[2].textContent = ++smth.counter;
+      node.childNodes[3].textContent = parseInt(smth.price) * smth.counter
     }
-    console.log(data);
-    document.querySelector("tbody").appendChild(node);
-  });
-})();
+    document.querySelector("tbody").appendChild(node)
+  })
+})()
