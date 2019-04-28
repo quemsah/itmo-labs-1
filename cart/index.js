@@ -1,73 +1,81 @@
 const url = "https://kodaktor.ru/cart_data.json";
+const select = document.querySelector.bind(document);
 const getData = async (url) => (await fetch(url)).json();
+const searchElementWText = (el, text) => document.evaluate("//" + el + "[contains(., '" + text + "')]", document, null, XPathResult.ANY_TYPE, null).iterateNext();
+const makeTr = (tr, data) => data.forEach(el => tr.appendChild(document.createElement("td").appendChild(document.createTextNode(el)).parentElement));
 const makeItem = (name, price) => {
   var template = document.createElement('template');
   let result = "<div id='item' class='col-3 col-12-medium' style='width: 31.6%' draggable='true'><h3>" + name + "</h3><hr><h3>" + price + "</h3></div>";
   template.innerHTML = result;
   return template.content
 }
-let arraydata = [];
-let total = 0;
+let data = [];
+let budget = 0;
+//get budget
+select('button').addEventListener("click", (e) => {
+  budget = select('input').value;
+  e.target.remove();
+  select('input').remove();
+  select('h3').remove();
+  console.log(budget);
+});
 
 (async () => {
-  let data = await getData(url);
-  Object.keys(data).forEach((key) => {
+  //get data
+  let obj = await getData(url);
+  Object.keys(obj).forEach((key) => {
     let name = key;
-    let price = data[key];
+    let price = obj[key];
     let counter = 0;
-    arraydata.push({
+    data.push({
       name,
       price,
       counter
     })
   });
-  arraydata.forEach((item) => {
-    document.querySelector('div.row').appendChild(makeItem(item.name, item.price))
+  //render items
+  data.forEach((item) => {
+    select('div.row').appendChild(makeItem(item.name, item.price))
   });
-  let budgetButton = document.querySelector('button');
-  let budgetInput = document.querySelector('input');
-  let budgetH3 = document.querySelector('h3');
-  budgetButton.addEventListener("click", () => {
-    budgetButton.remove();
-    budgetInput.remove();
-    budgetH3.remove()
-  });
+  //drag logic
   let item = document.querySelectorAll('#item');
-  let cart = document.querySelector('#cart');
+  let cart = select('#cart');
   cart.addEventListener('dragover', e => e.preventDefault());
   Array.from(item).forEach((el, i) => {
-    el.addEventListener('dragstart', event => {
-      event.dataTransfer.setData('application/json', JSON.stringify({
-        name: arraydata[i].name,
-        price: arraydata[i].price,
-        counter: arraydata[i].counter
+    el.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('application/json', JSON.stringify({
+        name: data[i].name,
+        price: data[i].price,
+        counter: data[i].counter
       }))
     })
   });
   cart.addEventListener('drop', e => {
-    let data = JSON.parse(e.dataTransfer.getData('application/json'));
-    let node = document.createElement("tr");
-    let smth = arraydata.find(x => x.name === data.name);
-    console.log(smth);
-    if (data.counter === 0) {
-      let tdName = document.createElement("td");
-      let tdPrice = document.createElement("td");
-      let tdCount = document.createElement("td");
-      let tdSum = document.createElement("td");
-      tdName.textContent = smth.name;
-      tdPrice.textContent = smth.price;
-      tdCount.textContent = ++smth.counter;
-      tdSum.textContent = parseInt(smth.price) * smth.counter;
-      node.appendChild(tdName);
-      node.appendChild(tdPrice);
-      node.appendChild(tdCount);
-      node.appendChild(tdSum)
+    let thisData = JSON.parse(e.dataTransfer.getData('application/json'));
+    let trItem = document.createElement("tr");
+    let thisItem = data.find(x => x.name === thisData.name);
+    if (thisData.counter === 0) {
+      makeTr(trItem, [thisItem.name, thisItem.price, ++thisItem.counter, parseInt(thisItem.price) * thisItem.counter]);
     } else {
-      node = document.evaluate("//tr[contains(., '" + smth.name + "')]", document, null, XPathResult.ANY_TYPE, null).iterateNext()
-      console.log('smth' + node);
-      node.childNodes[2].textContent = ++smth.counter;
-      node.childNodes[3].textContent = parseInt(smth.price) * smth.counter
+      trItem = searchElementWText('tr', thisItem.name);
+      trItem.childNodes[2].textContent = ++thisItem.counter;
+      trItem.childNodes[3].textContent = parseInt(thisItem.price) * thisItem.counter;
     }
-    document.querySelector("tbody").appendChild(node)
+    select("tbody").appendChild(trItem);
+    // итоговая строчка
+    let totalCount = data.map(a => a.counter).reduce((sum, a) => sum + a);
+    let total = data.map(a => a.counter * a.price).reduce((sum, a) => sum + a);
+    console.log(total);
+
+    let trTotal = searchElementWText('tr', 'Итого');
+    if (!trTotal) {
+      trTotal = document.createElement("tr");
+      makeTr(trTotal, ['Итого', '', totalCount, total]);
+      select("tbody").appendChild(trTotal);
+    } else {
+      trTotal.childNodes[2].textContent = totalCount;
+      trTotal.childNodes[3].textContent = total;
+    }
+    //console.log(totalCount);
   })
 })()
