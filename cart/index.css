@@ -1,0 +1,58 @@
+#cart {
+    flex: 1;
+    border: 3px dashed white;
+    position: relative;
+    height: auto;
+    min-height: 120px !important;
+    width: 100%;
+    background: transparent;
+    margin: 10px;
+    padding: 0 0 0 0
+}
+
+#item {
+    display: block;
+    border: 3px solid white;
+    margin: 10px;
+    padding: 0 0 0 0
+}
+
+h2 {
+    text-align: center;
+    margin-block-end: 0;
+    margin: 0 0 0- 0
+}
+
+h3 {
+    text-align: center;
+    margin-block-end: 0;
+    margin: 0 0 0 0
+}
+
+#item h3 {
+    text-align: center;
+    margin-block-end: 0;
+    margin: 1em 0 1em 0
+}
+
+hr {
+    border: 1px solid white
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+table {
+    margin: 0 0 0 0;
+    width: 50%
+}
+
+table tbody tr:nth-child(2n+1) {
+    background-color: rgba(212, 212, 255, .035)
+}
+
+table td {
+    padding: .75em .75em
+}

@@ -76,6 +76,35 @@ select('button').addEventListener("click", (e) => {
       trTotal.childNodes[2].textContent = totalCount;
       trTotal.childNodes[3].textContent = total;
     }
-    //console.log(totalCount);
-  })
+    select('#total').textContent = "Итого: " + total;
+  });
+
+  cart.addEventListener('click', e => {
+    let thisData = JSON.parse(e.dataTransfer.getData('application/json'));
+    let trItem = document.createElement("tr");
+    let thisItem = data.find(x => x.name === thisData.name);
+    if (thisData.counter === 0) {
+      makeTr(trItem, [thisItem.name, thisItem.price, ++thisItem.counter, parseInt(thisItem.price) * thisItem.counter]);
+    } else {
+      trItem = searchElementWText('tr', thisItem.name);
+      trItem.childNodes[2].textContent = ++thisItem.counter;
+      trItem.childNodes[3].textContent = parseInt(thisItem.price) * thisItem.counter;
+    }
+    select("tbody").appendChild(trItem);
+    // итоговая строчка
+    let totalCount = data.map(a => a.counter).reduce((sum, a) => sum + a);
+    let total = data.map(a => a.counter * a.price).reduce((sum, a) => sum + a);
+    console.log(total);
+
+    let trTotal = searchElementWText('tr', 'Итого');
+    if (!trTotal) {
+      trTotal = document.createElement("tr");
+      makeTr(trTotal, ['Итого', '', totalCount, total]);
+      select("tbody").appendChild(trTotal);
+    } else {
+      trTotal.childNodes[2].textContent = totalCount;
+      trTotal.childNodes[3].textContent = total;
+    }
+    select('#total').textContent = "Итого: " + total;
+  });
 })()
