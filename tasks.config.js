@@ -199,10 +199,10 @@ export default [{
     codeLink: "https://github.com/quemsah/itmo-labs/tree/master/canv-001",
     ansLink: "./canv-001/"
 }, {
-    name: "~~ frmw-001",
+    name: "frmw-001",
     taskLink: "https://kodaktor.ru/frmw_001",
     codeLink: "",
-    ansLink: ""
+    ansLink: "./frmw-001/"
 }, {
     name: "~~ frmw-002",
     taskLink: "https://kodaktor.ru/frmw_002",
