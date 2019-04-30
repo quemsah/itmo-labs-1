@@ -184,10 +184,10 @@ export default [{
     codeLink: "",
     ansLink: ""
 }, {
-    name: "~~ cart",
+    name: "cart",
     taskLink: "https://kodaktor.ru/g/cart",
     codeLink: "",
-    ansLink: ""
+    ansLink: "./cart/"
 }, {
     name: "bndl-001",
     taskLink: "https://kodaktor.ru/g/bndl_001",
