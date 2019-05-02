@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h3>Связанные компоненты</h3>
+    <h3>Связанные компоненты на Vue</h3>
     <TwoWayDataBinding/>
   </div>
 </template>
