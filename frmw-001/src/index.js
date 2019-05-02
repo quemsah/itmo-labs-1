@@ -31,6 +31,7 @@ class App extends C {
                     onChange={this
                     .changeInput
                     .bind(this)}/>
+                <br></br>
                 <input
                     value={this.state.data}
                     onChange={this

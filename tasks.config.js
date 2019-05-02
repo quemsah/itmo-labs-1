@@ -204,10 +204,10 @@ export default [{
     codeLink: "",
     ansLink: "./frmw-001/"
 }, {
-    name: "~~ frmw-002",
+    name: "frmw-002",
     taskLink: "https://kodaktor.ru/frmw_002",
     codeLink: "",
-    ansLink: ""
+    ansLink: "./frmw-002/dist"
 }, {
     name: "~~ frmw-003",
     taskLink: "https://kodaktor.ru/frmw_003",
