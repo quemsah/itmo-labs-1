@@ -67,7 +67,7 @@ export default class Body {
                             "class": "major"
                         })
                         .appendChild(setAttributes(document.createElement('h1'), {
-                            "text": "Лабораторные работы"
+                            "text": "Лабораторные работы ntcn"
                         }))
                         .parentElement)
                     .parentElement
