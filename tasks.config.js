@@ -209,15 +209,15 @@ export default [{
     codeLink: "",
     ansLink: "./frmw-002/dist"
 }, {
-    name: "~~ frmw-003",
+    name: "frmw-003",
     taskLink: "https://kodaktor.ru/frmw_003",
     codeLink: "",
-    ansLink: ""
+    ansLink: "./frmw-003/dist"
 }, {
-    name: "~~ frmw-004",
+    name: "frmw-004",
     taskLink: "https://kodaktor.ru/frmw_004",
     codeLink: "",
-    ansLink: ""
+    ansLink: "./frmw-004/dist"
 }, {
     name: "~~ frmw-005",
     taskLink: "https://kodaktor.ru/frmw_005",
