@@ -229,10 +229,10 @@ export default [{
     codeLink: "",
     ansLink: ""
 }, {
-    name: "~~ frmw-007",
+    name: "frmw-007",
     taskLink: "https://kodaktor.ru/frmw_007",
-    codeLink: "",
-    ansLink: ""
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-007",
+    ansLink: "./frmw-007/"
 }, {
     name: "~~ you",
     taskLink: "https://kodaktor.ru/you",
