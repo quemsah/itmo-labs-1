@@ -186,12 +186,12 @@ export default [{
 }, {
     name: "cart",
     taskLink: "https://kodaktor.ru/g/cart",
-    codeLink: "",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/cart",
     ansLink: "./cart/"
 }, {
     name: "bndl-001",
     taskLink: "https://kodaktor.ru/g/bndl_001",
-    codeLink: "",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/bndl-001",
     ansLink: "./bndl-001/"
 }, {
     name: "canv-001",
@@ -201,28 +201,28 @@ export default [{
 }, {
     name: "frmw-001",
     taskLink: "https://kodaktor.ru/frmw_001",
-    codeLink: "",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-001",
     ansLink: "./frmw-001/"
 }, {
     name: "frmw-002",
     taskLink: "https://kodaktor.ru/frmw_002",
-    codeLink: "",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-002",
     ansLink: "./frmw-002/dist"
 }, {
     name: "frmw-003",
     taskLink: "https://kodaktor.ru/frmw_003",
-    codeLink: "",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-003",
     ansLink: "./frmw-003/dist"
 }, {
     name: "frmw-004",
     taskLink: "https://kodaktor.ru/frmw_004",
-    codeLink: "",
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-004",
     ansLink: "./frmw-004/dist"
 }, {
-    name: "~~ frmw-005",
+    name: "frmw-005",
     taskLink: "https://kodaktor.ru/frmw_005",
-    codeLink: "",
-    ansLink: ""
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-005",
+    ansLink: "./frmw-005/dist"
 }, {
     name: "~~ frmw-006",
     taskLink: "https://kodaktor.ru/frmw_006",
