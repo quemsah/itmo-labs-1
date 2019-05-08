@@ -234,8 +234,8 @@ export default [{
     codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-007",
     ansLink: "./frmw-007/"
 }, {
-    name: "~~ you",
+    name: "you",
     taskLink: "https://kodaktor.ru/you",
     codeLink: "",
-    ansLink: ""
+    ansLink: "./you/"
 }]
