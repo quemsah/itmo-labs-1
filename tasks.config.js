@@ -224,10 +224,10 @@ export default [{
     codeLink: "https://github.com/quemsah/itmo-labs/tree/master/frmw-005",
     ansLink: "./frmw-005/dist"
 }, {
-    name: "~~ frmw-006",
+    name: "frmw-006",
     taskLink: "https://kodaktor.ru/frmw_006",
     codeLink: "",
-    ansLink: ""
+    ansLink: "https://ellie-app.com/5tDr6vCpbcra1"
 }, {
     name: "frmw-007",
     taskLink: "https://kodaktor.ru/frmw_007",
