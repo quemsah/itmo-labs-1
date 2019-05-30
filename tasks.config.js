@@ -179,10 +179,10 @@ export default [{
     codeLink: "",
     ansLink: ""
 }, {
-    name: "~~ xsl-intro",
+    name: "xsl-intro",
     taskLink: "https://kodaktor.ru/g/xsl_intro",
-    codeLink: "",
-    ansLink: ""
+    codeLink: "https://github.com/quemsah/itmo-labs/tree/master/xsl-intro",
+    ansLink: "./xsl-intro/"
 }, {
     name: "cart",
     taskLink: "https://kodaktor.ru/g/cart",
